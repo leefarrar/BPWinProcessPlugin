@@ -1,6 +1,6 @@
 {
  "description" : "Provides CPU, Memory use and process count for windows processes",
- "command" : "PowerShell.exe -ExecutionPolicy Bypass -File winProcs.ps1 $(powershell)",
+ "command" : "PowerShell.exe -ExecutionPolicy Bypass -File winProcs.ps1 $(process)",
  "metrics" : [
 			"LFPROCCOUNT",
 			"LFPROCMEM",
@@ -8,7 +8,7 @@
 			],
 "paramSchema" : [
         {
-            "title" : "Process Name",
+            "title" : "process",
             "description" : "process name to search for (must be exact)",
             "type" : "string",
             "default" : "explorer"
